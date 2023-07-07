@@ -14,7 +14,7 @@ const Locals = ({ locals }: Props) => {
           <p className="text-2xl">Elemento {e[0]}:</p>
           <table className="table-md mt-4 table w-auto table-auto overflow-hidden bg-neutral">
             <thead>
-              <tr className="text-center text-xl font-bold">
+              <tr className="neutral-content text-center text-xl font-bold">
                 <th colSpan={(e[1].local.length || 0) + 1}>{e[0]}</th>
               </tr>
               <tr>
@@ -32,7 +32,7 @@ const Locals = ({ locals }: Props) => {
             <tbody>
               {e[1].local.map((row, index) => (
                 <tr key={index}>
-                  <td className="bg-neutral-focus text-center text-base font-bold">
+                  <td className="bg-neutral-focus text-center text-base font-bold text-neutral-content">
                     {e[1].tableDOF[index] + 1}
                   </td>
                   {row.map((col, index) => (

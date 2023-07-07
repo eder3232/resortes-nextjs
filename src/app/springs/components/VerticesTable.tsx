@@ -22,14 +22,14 @@ const VerticesTable = () => {
       <table className="table-md table w-auto table-auto bg-neutral">
         <thead>
           <tr>
-            <th className="text-center">Add</th>
-            <th className="text-center">Remove</th>
-            <th className="text-center">Nombre</th>
-            <th className="text-center">Fuerza</th>
-            <th className="text-center">Desplazamiento</th>
-            <th className="text-center">Restringido</th>
+            <th className="text-center text-primary-content">Add</th>
+            <th className="text-center text-primary-content">Remove</th>
+            <th className="text-center text-primary-content">Nombre</th>
+            <th className="text-center text-primary-content">Fuerza</th>
+            <th className="text-center text-primary-content">Desplazamiento</th>
+            <th className="text-center text-primary-content">Restringido</th>
             <th
-              className="text-center"
+              className="text-center text-primary-content"
               style={{
                 display: config.userWantToDefineDOF ? 'table-cell' : 'none',
               }}
@@ -41,7 +41,7 @@ const VerticesTable = () => {
         <tbody>
           {vertices.map((vertex, index) => (
             <tr key={vertex.id} className="hover">
-              <td className="text-center">
+              <td className="text-center text-primary-content">
                 <button onClick={() => vertices_onAddNewRow(index)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const VerticesTable = () => {
                   </svg>
                 </button>
               </td>
-              <td className="text-center">
+              <td className="text-center text-primary-content">
                 <button onClick={() => vertices_onDeleteRow(index)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

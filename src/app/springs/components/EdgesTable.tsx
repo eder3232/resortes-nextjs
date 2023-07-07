@@ -14,18 +14,18 @@ const EdgesTable = () => {
       <table className="table-md table w-auto table-auto bg-neutral">
         <thead>
           <tr>
-            <td className="text-center">Add</td>
-            <td className="text-center">Remove</td>
-            <td className="text-center">Nombre</td>
-            <td className="text-center">From</td>
-            <td className="text-center">To</td>
-            <td className="text-center">K</td>
+            <td className="text-center text-primary-content">Add</td>
+            <td className="text-center text-primary-content">Remove</td>
+            <td className="text-center text-primary-content">Nombre</td>
+            <td className="text-center text-primary-content">From</td>
+            <td className="text-center text-primary-content">To</td>
+            <td className="text-center text-primary-content">K</td>
           </tr>
         </thead>
         <tbody>
           {edges.map((edge, index) => (
             <tr key={edge.id} className="hover">
-              <td className="text-center">
+              <td className="text-center text-primary-content">
                 <button onClick={() => edges_onAddNewRow(index)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const EdgesTable = () => {
                   </svg>
                 </button>
               </td>
-              <td className="text-center">
+              <td className="text-center text-primary-content">
                 <button onClick={() => edges_onDeleteRow(index)}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
